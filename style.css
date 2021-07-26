@@ -1,0 +1,530 @@
+body{
+margin:0;
+padding:0;   
+overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(201, 198, 198);
+    width: 100vw;
+    margin:0px;
+    padding:10px;
+}
+.hamburger{
+    height:30px;
+    width: 50px;
+}
+
+.first-container{
+    width: 230px;
+}
+.input-svg{
+    position: relative;
+    top:5px;
+}
+
+.input{
+    padding:15px 10px;
+    width: 40vw;
+    border-radius:8px;
+    border:1px solid rgb(201, 198, 198);
+    background-color: #f1f3f4;
+    font:normal 16px Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    margin-bottom: 10px;
+}
+
+.second-container img{ 
+    position: absolute;
+    top:24px;
+    left:270px;
+    height:20px;
+    width: 20px;
+}
+
+.second-container input{
+   text-indent: 50px;
+    outline:none;
+}
+.third-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 600px;
+}
+
+.second-container .inputChange{
+    background-color: white;
+    outline :none;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px rgb(240, 231, 231);
+}
+
+.third-container img{
+    height:20px;
+    width: 20px;
+}
+
+.user{
+    background-color: grey;
+    border-radius: 50%;
+    padding: 3px 3px;
+}
+.user-container{
+    position: relative;
+    top:2px
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 15vw;
+}
+
+.compose{
+    padding: 15px;
+    background-color: white;
+    width: 145px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 1px 1px 5px  rgb(138, 133, 133);
+    margin:8px 10px;
+    margin-top: 12px;
+    font-family: 'Google Sans', Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .25px;
+    background-image: url(https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png);
+    background-repeat: no-repeat;    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-position: 20% 50% ;
+}
+
+.compose-button{
+    display: inline-block;
+}
+.inbox{
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;
+    margin-top: 20px;
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/inbox_gm_googlered600_20dp.png);
+    background-repeat: no-repeat;
+    background-position: 27% 0%;
+    margin-bottom: 5px;
+}
+
+.starred{
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;
+    margin-top: 8px ;
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/grade_black_20dp.png);
+    background-repeat: no-repeat;
+    background-position: 27% 0%;
+    margin-bottom: 5px;    
+}
+
+.snoozed{
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;
+    margin-top: 8px ;
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/watch_later_black_20dp.png);
+    background-repeat: no-repeat;
+    background-position: 27% 0%;
+    margin-bottom: 5px;    
+}
+
+.sent{
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;
+    margin-top: 8px ;
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/send_black_20dp.png);
+    background-repeat: no-repeat;
+    background-position: 27% 0%;
+    margin-bottom: 5px;    
+}
+
+.drafts{
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;
+    margin-top: 8px ;
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/insert_drive_file_black_20dp.png);
+    background-repeat: no-repeat;
+    background-position: 27% 0%;
+    margin-bottom: 5px;    
+}
+
+.junk{
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;
+    margin-top: 8px ;
+    background-image: url(https://www.gstatic.com/images/icons/material/system_gm_filled/1x/label_gm_grey_24dp.png);
+    background-repeat: no-repeat;
+    background-position: 27% 0%;
+    text-align: start;
+    text-indent: 88px;
+    margin-bottom: 5px; 
+}
+
+.more{
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;
+    margin-top: 8px ;
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/expand_more_black_20dp.png);
+    background-repeat: no-repeat;
+    background-position: 27% 0%;
+    text-align: start;
+    text-indent: 88px;
+}
+
+.active{
+    background-color:rgb(252, 204, 212);
+    border-radius: 17px;
+    padding:4px 0px;
+    width: 100%;
+}
+
+.hangouts{
+    border-top: 1px solid rgb(201, 198, 198);
+    margin-top:30px;
+}
+
+.chat-container{
+    border-top: 1px solid rgb(201, 198, 198);
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+}
+.chat-container p{
+    position: relative;
+    left:40px;
+    font-family: 'Roboto,RobotoDraft',Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+}
+
+.chat-container .join-a-meeting{
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;
+    margin-top: 8px ;
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/keyboard_black_20dp.png);
+    background-position: 18% 0%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    text-align: start;
+    text-indent: 60px;
+}
+
+.chat-container .new-meeting{
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;
+    margin-top: 8px ;
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/videocam_black_20dp.png);
+    background-position: 18% 0%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    text-align: start;
+    text-indent: 60px;
+}
+
+.hangouts{
+    border-top: 1px solid rgb(201, 198, 198);
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hangouts p{
+    position: relative;
+    left:40px;
+    font-family: 'Roboto,RobotoDraft',Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .2px;
+    color: #202124;
+}
+
+.hangout-user{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left:14px;
+}
+.hangout-user img{
+    height:20px;
+    width: 20px;
+    background-color: grey;
+    border-radius: 50%;
+}
+.para{
+    position: relative;
+    right:80px;
+    bottom:12px;
+}
+
+.hangout-user button{
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    position: relative;
+    bottom:15px;
+}
+
+.side-email-container{
+    display: flex;
+}
+.email-container{
+    margin:0px auto;
+    overflow-y : hidden;
+    overflow-x: hidden;
+}
+.email-content {
+    display: flex;
+    width: 85vw;
+}
+.email-content input{
+    position: relative;
+    top:15px;
+    margin-right:20px;
+    width: 15px;
+    height: 15px;
+    left:15px;
+}
+
+.email-content > p{
+    font-weight: 600;
+}
+.username{
+    margin-right: 40px;
+    margin-left: 30px;
+}
+.time{
+    position: absolute;
+    right:80px;
+}
+
+.email-content:hover{
+    box-shadow: 1px 1px 5px  rgb(138, 133, 133);
+}
+
+.visible-email{
+    display: block;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom:70px;
+    height: 89vh;
+}
+.top-bar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.top-bar .reload{
+ height:18px;
+ width: 18px;
+ background-image: url(https://www.gstatic.com/images/icons/material/system/1x/refresh_black_20dp.png);
+ background-repeat: no-repeat;
+}
+
+.check-box{
+    position: relative;
+    left:16px;
+}
+.check-box input{
+    height:15px;
+    width:15px;
+}
+
+.reload{
+    position: relative;
+    right:360px;
+    bottom:2px;
+}
+.total-emails{
+    display: flex;
+    position: relative;
+    right:104px;
+}
+.icon-right {
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/chevron_right_black_20dp.png);
+    height:18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    position: relative;
+    top:15px;
+    left:30px;
+}
+.icon-left{
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/chevron_left_black_20dp.png);
+    height:18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    position: relative;
+    top:15px;
+    left:10px;
+}
+
+.compose-box{
+    z-index:100;
+    position: absolute;
+    right:10px;
+    bottom: -5px;
+    height: 70vh;
+    width: 35vw;
+    box-shadow: 1px 1px 5px  rgb(138, 133, 133);
+    border-top-left-radius: 12px;
+    border-top-right-radius : 12px;
+}
+.compose-bar{
+    background-color: rgba(0, 0, 0, 0.774);
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    border-top-left-radius: 12px;
+    border-top-right-radius : 12px;
+}
+.compose-btn{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+.compose-btn button{
+    border: none;
+    margin: 0px 5px;
+    background-color: rgba(61, 60, 60, 0.774);
+    color:white;
+    font-weight: 200;
+}
+
+.compose-bar p{
+    position: relative;
+    left:10px;
+    color:white;
+    font-weight: 400;
+}
+
+.compose-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.compose-input input{
+    border-bottom: 1px solid rgb(201, 198, 198);
+    border-right: none;
+    border-top: none;
+    border-left: none ;
+    padding: 10px;
+}
+.compose-input p{
+    position: absolute;
+    top:43px;
+    left:7px;
+    font-size:16px;
+}
+#message-box{
+    width: 99%;
+    height: 340px;
+    border:none;
+}
+
+.remove-para{
+    visibility: hidden;
+}
+
+.send-bar{
+    display: flex;
+    position: absolute;
+    bottom:0px;
+    padding: 15px 0px;
+    width: 100%;
+}
+.send-icon .send-email {
+    font-family: 'Google Sans', Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .25px;
+    background: none;
+    outline: none;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 10px 32px;
+    border-radius: 6px;
+}
+
+
+.send-icon{
+    position: relative;
+    left:10px;
+
+}
+
+.active-box{
+    visibility: visible;
+    
+}
+
+.remove-box{
+    visibility: hidden;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone By Rishabh</title>
+    <link rel="stylesheet" href ="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+       
+        <div class="first-container">
+            <img class="hamburger" src="./images/hamburger.svg"/>
+            <img class="input-svg" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png"/>
+        </div>  
+
+        <div class="second-container">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/>
+        <input class="input" type="text" placeholder="Seach mail"/>    
+        </div>
+
+        <div class="third-container">
+            <img src="https://img.icons8.com/fluent-systems-regular/24/000000/help.png"/>
+            <img src="https://img.icons8.com/material-outlined/24/000000/settings--v1.png"/>
+            <img src="https://img.icons8.com/metro/26/000000/activity-grid-2.png"/>
+          
+          <div class="user-container">
+            <img class="user" src="https://img.icons8.com/ios-filled/50/000000/user.png"/>
+          </div>        
+        </div>
+    </div>
+<!-- Sidebar Container -->
+
+<div class="compose-button">
+    <button class="compose">Compose</button>
+</div>
+<div class="side-email-container">
+    <div class="sidebar">
+      
+        <button class="btn inbox active" data-id="inbox">Inbox</button>
+        <button class="btn starred" data-id="starred">Starred</button>
+        <button class="btn snoozed" data-id="snoozed">Snoozed</button>
+        <button class="btn sent" data-id="sent">Sent</button>
+        <button class="btn drafts" data-id="drafts">Drafts</button>
+        <button class="btn junk" data-id="junk">Junk</button>
+        <button class="btn more" data-id="more">More</button>
+        
+        <div class="chat-container">
+            <p>Meet</p>
+            <button class="btn new-meeting " >New Meeting</button>
+            <button class="btn join-a-meeting" >Join a Meeting</button>
+        </div>
+        
+        <div class="hangouts">
+            <p>Hangouts</p>
+            <div class="hangout-user">
+                <img src ="https://img.icons8.com/ios-filled/50/000000/user.png"/>
+               <div class="para">
+                <p>User <i class='fa fa-caret-down'></i></p>
+               </div> 
+                <button>+</button>
+            </div>
+        </div> 
+        </div>
+        <div class="right-container">
+
+<!--Top Bar-->
+<div class="top-bar">
+    <div class="check-box"> 
+        <input type="checkbox" />
+        <i class='fa fa-caret-down'></i>
+    </div>
+    <div class="reload">
+    </div>
+    <div class="more-options"></div>
+    <div class="total-emails"><p>3 of 100</p>
+        <div class="icon-left"></div>
+        <div class="icon-right">
+
+        </div>
+       
+    </div>
+
+</div>
+
+<!--Mail container-->
+<div class="email-container">
+    <div class="email-content" id="inbox" >
+      <input type="checkbox"/>  
+      <p class="username">Rishabh Gupta</p> 
+      <p class="email-body">This is the inbox content</p>
+      <p class="time">8:39 PM</p>
+    </div>
+</div>
+
+<div class="compose-box remove-box">
+    <div class="compose-bar">
+        <p>New Message</p>
+        <div class="compose-btn">
+            <button>
+                <i class="fa fa-minus"></i>
+            </button>
+            <button>
+                <i class="fa fa-expand"></i>
+            </button>
+            <button class="close-btn">
+                <i class="fa fa-close"></i>
+            </button>
+        </div>
+   
+    </div>
+    <div class="compose-input">
+        <input type="text" placeholder="Recipients"/>
+        <p class="remove-para">To</p>
+        <input type="text" placeholder ="Subject"/>
+    </div>
+        <div class="email-body">
+            <textarea id="message-box"></textarea>
+        </div>
+    <div class="send-bar">
+        <div class="send-icon">
+            <button class="send-email">
+                Send
+            </button>
+        
+        </div>
+       
+    </div>
+</div>
+        </div>
+        </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
